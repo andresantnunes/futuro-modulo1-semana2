@@ -29,13 +29,17 @@ public class Exercicio22 {
             System.out.println("Operação inválida");
             return;
         }
+//        boolean positivo = false;
+//        if(resultado>=0){
+//            positivo = true;
+//        }
+//        boolean par = false;
+//        if(resultado % 2 == 0){
+//            par = true;
+//        }
+        boolean positivo = resultado>=0;
+        boolean par = resultado % 2 == 0;
 
-        boolean positivo = resultado>=0 ? true : false;
-
-        boolean par = false;
-        if(resultado % 2 == 0){
-            par = true;
-        }
         // true       false
         if(positivo && par){ //false
             System.out.println("O número "+resultado+" é par e positivo");
