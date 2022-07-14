@@ -27,6 +27,7 @@ public class Exercicio2 {
             resultado = numero1 / numero2;
         }else{
             System.out.println("Operação inválida");
+            return;
         }
 
         boolean positivo = false;
@@ -37,15 +38,15 @@ public class Exercicio2 {
         if(resultado % 2 == 0){
             par = true;
         }
-
-        if(positivo && par){
-            System.out.println("O número"+resultado+"é par e positivo");
+        // true       false
+        if(positivo && par){ //false
+            System.out.println("O número "+resultado+" é par e positivo");
         } else if(par){ // false
-            System.out.println("O número"+resultado+"é par e negativo");
-        } else if (positivo) { // false
-            System.out.println("O número"+resultado+"é impar e positivo");
+            System.out.println("O número "+resultado+" é par e negativo");
+        } else if (positivo) { // true
+            System.out.println("O número "+resultado+" é impar e positivo");
         } else {
-            System.out.println("O número"+resultado+"é impar e negativo");
+            System.out.println("O número "+resultado+" é impar e negativo");
         }
     }
 }
