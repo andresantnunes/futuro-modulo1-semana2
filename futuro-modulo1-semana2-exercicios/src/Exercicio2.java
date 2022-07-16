@@ -38,7 +38,7 @@ public class Exercicio2 {
         boolean positivo = resultado >= 0;
 
         if(par && positivo) // if c/ 1 linha não precisa de {}
-            System.out.println("O resultado "+ resultado + " é par e positivo");
+            System.out.println("O resultado     "+ resultado + " é par e positivo");
         else if (par)
             System.out.println("O resultado "+ resultado + " é par e negativo");
         else if (positivo)
